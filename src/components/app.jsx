@@ -13,7 +13,10 @@ class App extends React.Component {
         this.state = {text: 'Have a great Day!', hasLoaded: false};
     }
 
-    
+    handleEvent = (text) => {
+        this.setState({text})
+    }
+
     handleClick = () => {
         this.setState({hasLoaded: !this.state.hasLoaded});
     }
@@ -32,7 +35,7 @@ class App extends React.Component {
             <input 
                 placeholder={this.state.text}
                 value={this.state.text}
-                onChange={ (event) => { this.handleEvent({text: event.target.value})}} />
+                onChange={ (event) => this.handleEvent(event.target.value)} />
                 <button 
                     value={this.state.hasLoaded}
                     onClick={this.handleClick}>Refresh</button>
