@@ -65,11 +65,5 @@ class App extends React.Component {
 export default App;
 
 
-/*
-Add a button beneath that input. When clicked, the button should invoke a method defined on the class to toggle 
-a "hasLoaded" state property, which has a default value of false.
- */
-
-
 
 
