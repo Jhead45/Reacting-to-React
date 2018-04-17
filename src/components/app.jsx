@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
 /*
@@ -7,7 +7,7 @@ const App = (props) => {
 }
 */
 
-class App extends React.Component {
+class App extends Component {
     constructor (props) {
         super(props);
         this.state = {text: 'Have a great Day!', hasLoaded: false};
